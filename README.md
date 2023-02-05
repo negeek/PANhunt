@@ -26,6 +26,7 @@ You will find the Windows panhunt.exe (built on Windows using pyinstaller) and t
 
 
 ##Usage
+#### For Linux and Windows
 
 ```
 usage: panhunt [-h] [-s SEARCH] [-x EXCLUDE] [-t TEXTFILES] [-z ZIPFILES] [-e SPECIALFILES] [-m MAILFILES] [-l OTHERFILES] [-o OUTFILE] [-u]
@@ -70,6 +71,28 @@ FOUND PANs: D:\lab\test card text file.txt (47B 26/02/2014)
 		...
 Report written to panhunt_YYYY-MM-DD-HHMMSS.txt
 ```
+#### For Mac and Linux
+Get the adamcaudill-ccsrch-292a1a8 file and unzip. change directory to the folder.
+There is an executable file named ccrsh
+##### Usage
+Usage: ./ccsrch [options] [start path]
+  where [options] are:
+    -b             Add the byte offset into the file of the number
+    -e             Include the Modify Access and Create times in terms
+                   of seconds since the epoch
+    -f             Just output the filename with potential PAN data
+    -j             Include the Modify Access and Create times in terms
+                   of normal date/time
+    -o [filename]  Output the data to the file [filename] vs. standard out
+    -t [1 or 2]    Check if the pattern follows either a Track 1
+                   or 2 format
+    -T             Check for both Track 1 and Track 2 patterns
+    -c             Show a count of hits per file (only when using -o)
+    -s             Show live status information (only when using -o)
+    -l N           Limits the number of results from a single file before going
+                   on to the next file.
+    -n [list]      File extensions to exclude (i.e .dll,.exe)
+    -h 
 
 ## Function
 
