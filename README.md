@@ -75,7 +75,9 @@ Report written to panhunt_YYYY-MM-DD-HHMMSS.txt
 Get the adamcaudill-ccsrch-292a1a8 file and unzip. change directory to the folder.
 There is an executable file named ccrsh
 ##### Usage
+```
 Usage: ./ccsrch [options] [start path]
+	
   where [options] are:
     -b             Add the byte offset into the file of the number
     -e             Include the Modify Access and Create times in terms
@@ -93,7 +95,7 @@ Usage: ./ccsrch [options] [start path]
                    on to the next file.
     -n [list]      File extensions to exclude (i.e .dll,.exe)
     -h 
-
+```
 ## Function
 
 The script uses regular expressions to look for Visa, MasterCard or AMEX credit card numbers in document files. Zip files are recursed to look for document files. PST and MSG files are parsed and emails and attachments searched in. The script will list but does not yet search Access databases.
